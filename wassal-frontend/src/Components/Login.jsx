@@ -10,15 +10,46 @@ export function Login() {
   return (
     <Modal show={showLogin} onHide={() => setShowLogin(false)}>
       <Modal.Body>
-        Login
-        <br />
-        username:
-        <input type="text" placeholder="Enter your username" />
-        <br />
-        password:
-        <input type="password" placeholder="Enter your password" />
-        <br />
-        <Button variant="primary">Login</Button>
+        <div className="mb-4 text-center">
+          <h2>Login</h2>
+        </div>
+        <form>
+          <div className="mb-3">
+            <label htmlFor="login-email" className="form-label">
+              Email
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="login-username"
+              placeholder="Email"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="login-password" className="form-label">
+              Password
+            </label>
+            <input
+              type="password"
+              className="form-control"
+              id="login-password"
+              placeholder="Password"
+            />
+          </div>
+          <div>
+            <p>
+              <a href="#">Forgot password?</a>
+            </p>
+          </div>
+          <Button variant="primary" className="w-100 mb-2">
+            Login
+          </Button>
+        </form>
+        <div>
+          <p>
+            Don't have an account? <a href="#">Create an account</a>
+          </p>
+        </div>
       </Modal.Body>
     </Modal>
   );
