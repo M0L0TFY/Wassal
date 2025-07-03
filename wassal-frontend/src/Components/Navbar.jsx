@@ -3,6 +3,7 @@ import { LoginContext } from "./Login";
 
 import UserIcon from "../assets/UserIcon.png";
 import LocationIcon from "../assets/LocationIcon.png";
+import CartIcon from "../assets/CartIcon.png";
 import Wassal from "../assets/Wassal.png";
 import DeliveryBike from "../assets/DeliveryBike.png";
 
@@ -19,6 +20,15 @@ export function Navbar() {
           <img src={Wassal} alt="Wassal" />
         </a>
         <div className="navbar-icons me-5">
+          <a
+            href="#"
+            className="me-5"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+          >
+            <img src={CartIcon} alt="Cart" />
+          </a>
           <a
             href="#"
             className="me-5"

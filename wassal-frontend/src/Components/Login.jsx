@@ -22,7 +22,7 @@ export function Login() {
             <input
               type="text"
               className="form-control"
-              id="login-username"
+              id="login-email"
               placeholder="Email"
             />
           </div>
