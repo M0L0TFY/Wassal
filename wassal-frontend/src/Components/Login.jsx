@@ -38,16 +38,19 @@ export function Login() {
           </div>
           <div>
             <p>
-              <a href="#">Forgot password?</a>
+              <a href="#" className="links">
+                Forgot password?
+              </a>
             </p>
           </div>
-          <Button variant="primary" className="w-100 mb-2">
-            Login
-          </Button>
+          <Button className=" btn w-100 mb-2">Login</Button>
         </form>
         <div>
           <p>
-            Don't have an account? <a href="#">Create an account</a>
+            Don't have an account?{" "}
+            <a href="#" className="links">
+              Create an account
+            </a>
           </p>
         </div>
       </Modal.Body>

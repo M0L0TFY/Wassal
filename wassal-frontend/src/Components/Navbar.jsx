@@ -1,27 +1,32 @@
 import { useContext } from "react";
 import { LoginContext } from "./Login";
 
-import userIcon from "../assets/userIcon.png";
-import languageIcon from "../assets/languageIcon.png";
+import UserIcon from "../assets/UserIcon.png";
+import LocationIcon from "../assets/LocationIcon.png";
+import Wassal from "../assets/Wassal.png";
+import DeliveryBike from "../assets/DeliveryBike.png";
 
 export function Navbar() {
   const { setShowLogin } = useContext(LoginContext);
 
   return (
     <>
-      <nav className="navbar d-flex justify-content-between align-items-center m-5">
-        <a href="#" className="ms-5">
-          WassalLogo
+      <div className="navbar-delivery">
+        <img src={DeliveryBike} />
+      </div>
+      <nav className="navbar d-flex justify-content-between align-items-center mb-5">
+        <a href="#" className="wassal ms-5">
+          <img src={Wassal} alt="Wassal" />
         </a>
-        <div className="me-5">
+        <div className="navbar-icons me-5">
           <a
             href="#"
-            className="me-4"
+            className="me-5"
             onClick={(e) => {
               e.preventDefault();
             }}
           >
-            <img src={languageIcon} alt="Language" />
+            <img src={LocationIcon} alt="Location" />
           </a>
           <a
             href="#"
@@ -31,7 +36,7 @@ export function Navbar() {
               setShowLogin(true);
             }}
           >
-            <img src={userIcon} alt="Profile" />
+            <img src={UserIcon} alt="Profile" />
           </a>
         </div>
       </nav>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Login, LoginContext } from "../Components/Login";
 import { Navbar } from "../Components/Navbar";
+import { Categories } from "../Components/Categories";
 
 export function Home() {
   const [showLogin, setShowLogin] = useState(false);
@@ -10,7 +11,7 @@ export function Home() {
       <LoginContext.Provider value={{ showLogin, setShowLogin }}>
         <Navbar />
         <Login />
-        <h1>This is the home page</h1>
+        <Categories />
       </LoginContext.Provider>
     </>
   );
