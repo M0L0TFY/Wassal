@@ -3,6 +3,7 @@ import { Login, LoginContext } from "../Components/Login";
 import { Navbar } from "../Components/Navbar";
 import { Categories } from "../Components/Categories";
 import { Search } from "../Components/Search";
+import { Footer } from "../Components/Footer";
 
 export function Home() {
   const [showLogin, setShowLogin] = useState(false);
@@ -18,6 +19,7 @@ export function Home() {
       <Search />
       <br />
       <Categories />
+      <Footer />
     </>
   );
 }
