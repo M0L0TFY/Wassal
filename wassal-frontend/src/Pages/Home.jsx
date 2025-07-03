@@ -11,8 +11,8 @@ export function Home() {
       <LoginContext.Provider value={{ showLogin, setShowLogin }}>
         <Navbar />
         <Login />
-        <Categories />
       </LoginContext.Provider>
+      <Categories />
     </>
   );
 }

@@ -4,12 +4,20 @@ export function Register() {
       <h1>Register</h1>
       <form>
         <label>
-          Username:
-          <input type="text" name="username" required />
+          First Name:
+          <input type="text" name="firstName" required />
+        </label>
+        <label>
+          Last Name:
+          <input type="text" name="lastName" required />
         </label>
         <label>
           Email:
-          <input type="email" name="email" required />
+          <input type="text" name="email" required />
+        </label>
+        <label>
+          Phone number:
+          <input type="tel" name="phone" required />
         </label>
         <label>
           Password:
