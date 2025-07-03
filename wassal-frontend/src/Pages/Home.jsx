@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Login, LoginContext } from "../Components/Login";
 import { Navbar } from "../Components/Navbar";
 import { Categories } from "../Components/Categories";
+import { Search } from "../Components/Search";
 
 export function Home() {
   const [showLogin, setShowLogin] = useState(false);
@@ -12,6 +13,10 @@ export function Home() {
         <Navbar />
         <Login />
       </LoginContext.Provider>
+      <h3 style={{ textAlign: "center" }}>Fast delivery for all your orders</h3>
+      <br />
+      <Search />
+      <br />
       <Categories />
     </>
   );

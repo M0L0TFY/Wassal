@@ -14,7 +14,7 @@ export function Navbar() {
       <div className="navbar-delivery">
         <img src={DeliveryBike} />
       </div>
-      <nav className="navbar d-flex justify-content-between align-items-center mb-5">
+      <nav className="navbar d-flex justify-content-between align-items-center py-0 mb-5">
         <a href="#" className="wassal ms-5">
           <img src={Wassal} alt="Wassal" />
         </a>
